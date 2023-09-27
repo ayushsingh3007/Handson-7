@@ -17,9 +17,11 @@ const StudentSlice=createSlice({
     name:"Stu_Data",
     initialState,
     reducers:{
-        editStudent:(state,action)=>{
-        state[action.payload.index]=action.payload.info
+        editStudent: (state, action) => {
+            const { index, info } = action.payload;
+            state[index] = info;
         },
+        
         addStudent:(state, action)=>{
             state.push(action.payload); 
         }
