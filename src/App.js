@@ -1,10 +1,13 @@
 
 import './App.css';
+import { RouteCompo } from './Redu/CompoUI/RouteCompo';
+
 
 function App() {
-  return (
+   return (
     <div className="App">
-     <h4> i am ayush singh......</h4>
+<RouteCompo/>
+
     </div>
   );
 }
