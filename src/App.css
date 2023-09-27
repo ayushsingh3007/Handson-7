@@ -1,0 +1,86 @@
+/* Add your styles here */
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    float: right;
+    top: 10%;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th, .student-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #f0f0f0;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+/* Add your styles here */
+
+.nav-link {
+    margin-right: 10px;
+    
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+/* Add your styles here */
+
+.edit-student-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.update-btn {
+    background-color: #28a745;
+    color: #fff;
+}
