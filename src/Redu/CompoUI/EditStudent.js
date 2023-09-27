@@ -1,70 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { editStudent } from "../Slice/Slice";
-
 
 const EditStudent = () => {
     const index = useLocation().state.index;
     const dispatch = useDispatch();
     const data = useSelector((state) => state.Stu_Data);
 
-    const [info, setInfo] = useState({
-        name: "",
-        age: "",
-        course: "",
-        batch: ""
-    });
+    // Local state to temporarily store edited values
+    const [editedInfo, setEditedInfo] = useState(data[index]);
+
+    useEffect(() => {
+        setEditedInfo(data[index]); // Update local state when index changes
+    }, [index, data]);
 
     const Navi = useNavigate();
 
     const handlechange = (e) => {
-        setInfo({ ...info, [e.target.name]: e.target.value });
+        setEditedInfo({
+            ...editedInfo,
+            [e.target.name]: e.target.value
+        });
     }
 
     const handleClick = () => {
-        dispatch(editStudent({ info, index }));
+        dispatch(editStudent({ info: editedInfo, index }));
         Navi('/student');
     }
 
     return (
-        <div className="edit-student-container">
+        <>
             <label htmlFor="name">Name</label>
             <input
-                type="text"
-                placeholder="Enter name"
+                placeholder="enter name"
                 name="name"
-                value={info.name}
+                value={editedInfo.name}
                 onChange={handlechange}
             />
             <label htmlFor="age">Age</label>
             <input
-                type="text"
-                placeholder="Enter age"
+                placeholder="enter age"
                 name="age"
-                value={info.age}
+                value={editedInfo.age}
                 onChange={handlechange}
             />
             <label htmlFor="course">Course</label>
             <input
-                type="text"
-                placeholder="Enter course"
+                placeholder="enter course"
                 name="course"
-                value={info.course}
+                value={editedInfo.course}
                 onChange={handlechange}
             />
-            <label htmlFor="batch">Batch</label>
+            <label htmlFor="">Batch</label>
             <input
-                type="text"
-                placeholder="Enter batch"
+                placeholder="enter batch"
                 name="batch"
-                value={info.batch}
+                value={editedInfo.batch}
                 onChange={handlechange}
             />
 
-            <button className="btn cancel-btn" onClick={() => Navi('/student')}>Cancel</button>
-            <button className="btn update-btn" onClick={handleClick}>Update</button>
-        </div>
+            <button className="btn" onClick={() => Navi('/student')}>Cancel</button>
+            <button className="btn" onClick={handleClick}>update</button>
+        </>
     );
 }
 
