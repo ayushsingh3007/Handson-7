@@ -39,16 +39,19 @@
 
 .nav-link {
     margin-right: 10px;
-    display:flex;
-    align-item:center;
-    justify-content:space-between;
+    display: flex;
+    align-items: center; /* corrected typo */
+    justify-content: space-between;
     text-decoration: none;
-    width:100vw;
-    height:10%;
-    flex-direction:column;
+    width: 100vw;
+    height: 10%;
+    flex-direction: column; /* corrected typo */
     color: #007bff;
     font-weight: bold;
+    position: absolute;
+    top: 0;
 }
+
 /* Add your styles here */
 
 .edit-student-container {
