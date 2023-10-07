@@ -45,7 +45,7 @@
     text-decoration: none;
     width: 100vw;
     height: 10%;
-    flex-direction: column; /* corrected typo */
+    flex-direction: row; /* corrected typo */
     color: #007bff;
     font-weight: bold;
 /*     position: absolute;
