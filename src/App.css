@@ -48,8 +48,8 @@
     flex-direction: column; /* corrected typo */
     color: #007bff;
     font-weight: bold;
-    position: absolute;
-    top: 0;
+/*     position: absolute;
+    top: 0; */
 }
 
 /* Add your styles here */
