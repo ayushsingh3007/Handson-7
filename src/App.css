@@ -38,19 +38,21 @@
 /* Add your styles here */
 
 .nav-link {
-    margin-right: 10px;
     display: flex;
-    
+
     justify-content: space-between;
     text-decoration: none;
-    width: 100vw;
-    height: 10%;
-    flex-direction: row; /* corrected typo */
+
     color: #007bff;
     font-weight: bold;
-/*     position: absolute;
-    top: 0; */
+    width: 100%; /* Take up full width */
+    border-bottom: 2px solid transparent; /* Optional: Adds a bottom border on hover */
 }
+
+.nav-link:hover {
+    border-bottom-color: #007bff; /* Optional: Change border color on hover */
+}
+
 
 /* Add your styles here */
 
