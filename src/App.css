@@ -40,7 +40,7 @@
 .nav-link {
     margin-right: 10px;
     display: flex;
-    align-items: center; /* corrected typo */
+    
     justify-content: space-between;
     text-decoration: none;
     width: 100vw;
