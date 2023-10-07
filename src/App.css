@@ -43,6 +43,9 @@
     align-item:center;
     justify-content:space-between;
     text-decoration: none;
+    width:100vw;
+    height:10%;
+    flex-direction:coloumn;
     color: #007bff;
     font-weight: bold;
 }
