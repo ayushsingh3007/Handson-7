@@ -8,7 +8,7 @@
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
-    float: right;
+    position:absolute;
     top: 16%;
 }
 
