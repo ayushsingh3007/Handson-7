@@ -39,7 +39,9 @@
 
 .nav-link {
     margin-right: 10px;
-    
+    display:flex;
+    align-item:center;
+    justify-content:space-between;
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
