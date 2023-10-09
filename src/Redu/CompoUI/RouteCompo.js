@@ -10,6 +10,7 @@ import { AddStudent } from "./AddStudent";
 const RouteCompo = () => {
     return (
         <>
+        <div id="navbar">
             <BrowserRouter>
                 <NavLink className="nav-link" to="/">Home</NavLink>
                 <NavLink className="nav-link" to="/student">Student</NavLink>
@@ -22,6 +23,7 @@ const RouteCompo = () => {
                     <Route path="/addstudent" element={<AddStudent />} />
                 </Routes>
             </BrowserRouter>
+        </div>
         </>
     );
 }
