@@ -8,7 +8,7 @@ const Student = () => {
     const Navi = useNavigate();
 
     return (
-        <>
+        <div>
             <button className="add-button" onClick={() => Navi('/addstudent')}>Add New Student</button>
             <table className="student-table">
                 <thead>
@@ -34,7 +34,7 @@ const Student = () => {
                     })}
                 </tbody>
             </table>
-        </>
+        </div>
     );
 }
 
