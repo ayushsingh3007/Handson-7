@@ -9,7 +9,7 @@ import { AddStudent } from "./AddStudent";
 
 const RouteCompo = () => {
     return (
-        <>
+        <div>
         <div id="navbar">
             <BrowserRouter>
                 <NavLink className="nav-link" to="/">Home</NavLink>
@@ -24,7 +24,7 @@ const RouteCompo = () => {
                 </Routes>
             </BrowserRouter>
         </div>
-        </>
+        </div>
     );
 }
 
