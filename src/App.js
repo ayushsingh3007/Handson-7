@@ -1,8 +1,9 @@
 
 import './App.css';
 import { RouteCompo } from './Redu/CompoUI/RouteCompo';
-import {Link} from "BrowserRouter"
-
+import {
+    Link
+} from "react-router-dom";
 
 function App() {
    return (
