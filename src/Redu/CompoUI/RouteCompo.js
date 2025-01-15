@@ -12,9 +12,8 @@ const RouteCompo = () => {
         <div>
         <div id="navbar">
             <BrowserRouter>
-                <NavLink className="nav-link" to="/">Home</NavLink>
-                <NavLink className="nav-link" to="/student">Student</NavLink>
-                <NavLink className="nav-link" to="contact">Contact</NavLink>
+
+        
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/student" element={<Student />} />
